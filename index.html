@@ -15,11 +15,15 @@
 
     <script src="https://kit.fontawesome.com/b4e718f9dc.js" crossorigin="anonymous"></script>
 
+
+
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
     </style>
+
+
 </head>
 
 <body class="font-lato">
@@ -32,23 +36,24 @@
                     <!-- 2nd div -->
                     <div class="flex justify-between items-center">
                         <!-- 3rd div first 2 nav in this one -->
-                       <div class="flex justify-between items-center w-[60%]">
-                        <div class="hidden md:flex space-x-3 text-xl py-3 px-3">
-                            <a href="#">Home</a>
-                            <a href="#">About</a>
-                            <a href="#">Shop</a>
-                            <a href="#">Contact</a>
+                        <div class="flex justify-between items-center md:w-[100%] lg:w-[60%] ">
+                            <div class="hidden md:flex space-x-3 text-xl py-3 px-3">
+                                <a href="#">Home</a>
+                                <a href="#">About</a>
+                                <a href="#">Shop</a>
+                                <a href="#">Contact</a>
+                            </div>
+                            <div class="flex space-x-2 items-center py-3 px-3">
+                                <img class="w-6 h-7" src="./image/logo.png" alt="">
+                                <p class="text-xl lg:text-4xl font-bold">Fruit Burst</p>
+                            </div>
                         </div>
-                        <div class="flex space-x-2 items-center py-3 px-3">
-                            <img class="w-6 h-7" src="./image/logo.png" alt="">
-                            <p class="text-xl md:text-4xl font-bold">Fruit Burst</p>
-                        </div>
-                       </div>
-                       <!--1st 2 nav ends here-->
-                       <!-- last nav -->
-                        <div class="hidden md:flex">
-                            <input class="py-3 px-3 rounded-3xl border-none" type="search" placeholder="Search here"
+                        <!--1st 2 nav ends here-->
+                        <!-- last nav -->
+                        <div class="hidden bg-white rounded-2xl w-60 lg:flex items-center">
+                            <input class="w-52 outline-none py-2 px-3 rounded-3xl border-none" type="search" placeholder="Search here"
                                 id="">
+                                <i class=" text-black fa-solid fa-magnifying-glass"></i>
                         </div>
                         <!-- Mobile button -->
                         <div class=" md:hidden flex items-center pr-4">
@@ -60,13 +65,27 @@
                 </div>
                 <!-- Mobile menu -->
                 <div>
-                    <div class="mobile-menu hidden">
+                    <div class="mobile-menu hidden bg-gray-400 rounded-3xl my-6">
                         <a href="#" class="block text-xl py-2 px-4">Home</a>
                         <a href="#" class="block text-xl py-2 px-4">About</a>
                         <a href="#" class="block text-xl py-2 px-4">Shop</a>
                         <a href="#" class="block text-xl py-2 px-4">Contact</a>
+                        <a cl href=""><input class="w-32 bg-white outline-none py-2 px-3 mb-6 rounded-3xl border-none" type="search" placeholder="Search here"
+                            id="">
+                            <i class=" text-black fa-solid fa-magnifying-glass"></i></a>
                     </div>
                 </div>
+                <!-- JavaScript-->
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const btn = document.querySelector('.mobile-menu-button');
+                        const menu = document.querySelector('.mobile-menu');
+
+                        btn.addEventListener('click', () => {
+                            menu.classList.toggle('hidden');
+                        });
+                    });
+                </script>
             </nav>
         </section>
         <!-- nav try -->
