@@ -24,28 +24,52 @@
 
 <body class="font-lato">
     <header class="">
-        <nav class="md:text-white max-w-screen-xl mx-auto px-2 md:px-10 mt-5 mb-10">
-            <div
-                class="flex flex-row-reverse justify-between items-center rounded-full md:bg-[#F85559] px-2 md:px-10 md:flex-row py-2 md:py-2 ">
-
-                <div class="flex flex-1 text-xs md:text-sm lg:text-xl list-none gap-2">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">All Fruits</a></li>
+        <!-- nav try -->
+        <section>
+            <nav class="max-w-screen-xl mx-auto px-2 md:px-10 mt-5 mb-10">
+                <!-- 1st div -->
+                <div class=" max-w-screen-xl text-white mx-auto px-3 md:px-12 bg-[#F85559] rounded-3xl">
+                    <!-- 2nd div -->
+                    <div class="flex justify-between items-center">
+                        <!-- 3rd div first 2 nav in this one -->
+                       <div class="flex justify-between items-center w-[60%]">
+                        <div class="hidden md:flex space-x-3 text-xl py-3 px-3">
+                            <a href="#">Home</a>
+                            <a href="#">About</a>
+                            <a href="#">Shop</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="flex space-x-2 items-center py-3 px-3">
+                            <img class="w-6 h-7" src="./image/logo.png" alt="">
+                            <p class="text-xl md:text-4xl font-bold">Fruit Burst</p>
+                        </div>
+                       </div>
+                       <!--1st 2 nav ends here-->
+                       <!-- last nav -->
+                        <div class="hidden md:flex">
+                            <input class="py-3 px-3 rounded-3xl border-none" type="search" placeholder="Search here"
+                                id="">
+                        </div>
+                        <!-- Mobile button -->
+                        <div class=" md:hidden flex items-center pr-4">
+                            <button class="mobile-menu-button">
+                                <i class="fa-solid fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="flex flex-1 items-center">
-                    <img class="w-[15%]" src="./image/logo.png" alt="">
-                    <h1 class="text-xl font-bold md:text-2xl lg:text-3xl ">Fruit Burst</h1>
+                <!-- Mobile menu -->
+                <div>
+                    <div class="mobile-menu hidden">
+                        <a href="#" class="block text-xl py-2 px-4">Home</a>
+                        <a href="#" class="block text-xl py-2 px-4">About</a>
+                        <a href="#" class="block text-xl py-2 px-4">Shop</a>
+                        <a href="#" class="block text-xl py-2 px-4">Contact</a>
+                    </div>
                 </div>
-                <div class="flex-1 items-center hidden md:block ">
-                    <p class="flex justify-between bg-white rounded-2xl p-2 text-sm">Search here<a href=""><i
-                                class="text-black fa-solid fa-magnifying-glass"></i> </a></p>
-                </div>
-            </div>
-        </nav>
-
+            </nav>
+        </section>
+        <!-- nav try -->
     </header>
     <main>
         <!-- banner section -->
@@ -140,8 +164,10 @@
         <section class="max-w-screen-xl mx-auto my-2 md:my-8 lg:my-32 px-2 md:px-10 pb-10">
             <div class="flex flex-col gap-4 md:flex-row justify-between items-center text-center md:text-start">
                 <div class=" w-[80%] mx-auto md:mx-0 md:w-[50%]">
-                    <h3 class="text-3xl lg:text-5xl text-[#121212] font-extrabold text-center lg:text-left pb-3">Deal of the day</h3>
-                    <p class="md:text">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                    <h3 class="text-3xl lg:text-5xl text-[#121212] font-extrabold text-center lg:text-left pb-3">Deal of
+                        the day</h3>
+                    <p class="md:text">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical Latin
                         literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="flex gap-5 justify-center">
@@ -482,7 +508,8 @@
         <section class="max-w-screen-xl mx-auto my-2 md:my-8 lg:my-32 px-2 md:px-10 pb-10">
             <div class="">
                 <h2 class="text-4xl md:text-5xl font-extrabold text-center pb-6">Why Choose Us</h2>
-                <p class="text-base font-medium pb-5 w-[90%] md:w-[80%] lg:w-[50%] mx-auto text-center">Contrary to popular belief,
+                <p class="text-base font-medium pb-5 w-[90%] md:w-[80%] lg:w-[50%] mx-auto text-center">Contrary to
+                    popular belief,
                     is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making
                     it over 2000 years old.</p>
 
